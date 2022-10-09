@@ -15,7 +15,7 @@ pagination:
     <div class="photo-part" style="padding-left: 80px;">
       <ul>
           {% for photo in pagination.items -%}
-          <li style="display:inline; padding-left: 5px; border: 10px"> <a href="/photo/{{ photo.id }}/index.html">
+          <li style="display:inline; padding-left: 5px; border: 10px"> <a href="{{ photo.id }}">
               <img src="{{photo.src.tiny}}" alt="{{photo.alt}}"></a>
           </li>
           {% endfor -%}
