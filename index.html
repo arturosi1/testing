@@ -23,13 +23,13 @@ pagination:
     </div>
         <nav>
             {% if pagination.href.previous %}
-            <a href="{{pagination.href.previous}}"><b>Previous</b></a>
+            <a href="/testing/{{pagination.href.previous}}"><b>Previous</b></a>
             {% else %}
             &nbsp;
             {% endif %}
 
             {% if pagination.href.next %}
-            <a href="{{pagination.href.next}}"><b>Next</b></a>
+            <a href="/testing/{{pagination.href.next}}"><b>Next</b></a>
             {% endif %}
         </nav>
 </body>
